@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:meu_app/inherited/UserInfos.dart';
+import 'package:meu_app/stateful/DarkMode.dart';
+import 'package:meu_app/stateful/RandomNumber.dart';
+import 'package:meu_app/stateful/StoreStatus.dart';
 import 'package:meu_app/stateless/Botao/Botao.dart';
 import 'package:meu_app/stateful/Contador.dart';
 import 'package:meu_app/stateless/cardUser/User.dart';
 import 'package:meu_app/stateless/sem_estado/SemEstado.dart';
 
 void main(List<String> args) {
-/*   runApp(Container(
+  /*   runApp(Container(
     child: Text(
       "Bem-vindo ao Flutter",
       textDirection: TextDirection.ltr,
@@ -13,25 +17,26 @@ void main(List<String> args) {
     ),
   )); */
 
-
   // runApp(SemEstado());
 
-
-/*   runApp(MaterialApp(
+  /*   runApp(MaterialApp(
     home: Center(
       child: Botao(),
     ),
   )); */
 
+  // runApp(User());
 
-  runApp(User());
+  // runApp(DarkMode());
 
+  // runApp(RandomNumber());
 
-/* 
+  // runApp(StoreStatus());
+
+  runApp(UserInfos());
+
+  /* 
   runApp(MaterialApp(
     home: Contador(),
   )); */
-  
-
-
 }

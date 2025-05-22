@@ -36,7 +36,8 @@ class UserCard extends StatelessWidget {
                     style: TextStyle(
                       fontSize: 18, 
                       fontWeight: FontWeight.bold
-                      ),),
+                      ),
+                    ),
                     Text(
                       email,
                       style: TextStyle(

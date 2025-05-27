@@ -8,6 +8,7 @@ class StoreStatus extends StatelessWidget {
 }
 
 class StoreStatusWidget extends StatefulWidget {
+  @override
   _StoreStatusWidgetState createState() => _StoreStatusWidgetState();
 }
 
@@ -29,7 +30,7 @@ class _StoreStatusWidgetState extends State<StoreStatusWidget> {
           icon: Icon(Icons.store),
           onPressed: (){},
         ),
-        ),
+      ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -41,14 +42,17 @@ class _StoreStatusWidgetState extends State<StoreStatusWidget> {
                 color: isOpen ? Colors.green : Colors.red
               )
             ),
+
             SwitchListTile(
               title: Text("Change Status"),
+              subtitle: Text("Alterne entre Aberto/Fechado"),
               value: isOpen,
               onChanged: (bool value) {
                 setState(() {
                   isOpen = value;
                 });
               },
+              secondary: const Icon(Icons.store),
             ),
           ],
         ),

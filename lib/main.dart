@@ -31,9 +31,9 @@ void main(List<String> args) {
 
   // runApp(RandomNumber());
 
-  // runApp(StoreStatus());
+  runApp(StoreStatus());
 
-  runApp(UserInfos());
+  // runApp(UserInfos());
 
   /* 
   runApp(MaterialApp(

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:meu_app/exercicios/ex01.dart';
 import 'package:meu_app/inherited/UserInfos.dart';
+import 'package:meu_app/material_widget/my_material.dart';
 import 'package:meu_app/stateful/DarkMode.dart';
 import 'package:meu_app/stateful/RandomNumber.dart';
 import 'package:meu_app/stateful/StoreStatus.dart';
@@ -31,7 +33,7 @@ void main(List<String> args) {
 
   // runApp(RandomNumber());
 
-  runApp(StoreStatus());
+  // runApp(StoreStatus());
 
   // runApp(UserInfos());
 
@@ -39,4 +41,8 @@ void main(List<String> args) {
   runApp(MaterialApp(
     home: Contador(),
   )); */
+
+  // runApp(MyMaterial());
+
+  runApp(MyApp());
 }

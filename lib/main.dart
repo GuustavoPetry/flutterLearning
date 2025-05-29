@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:meu_app/exercicios/ex01.dart';
+import 'package:meu_app/exercicios/exercicioMaterial.dart';
 import 'package:meu_app/inherited/UserInfos.dart';
 import 'package:meu_app/material_widget/my_material.dart';
 import 'package:meu_app/stateful/DarkMode.dart';
@@ -44,5 +44,5 @@ void main(List<String> args) {
 
   // runApp(MyMaterial());
 
-  runApp(MyApp());
+  runApp(ExercicioMaterial());
 }

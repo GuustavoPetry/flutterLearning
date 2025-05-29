@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+
 
 class MyMaterial extends StatelessWidget {
   const MyMaterial({super.key});
@@ -40,7 +40,8 @@ class _TelaState extends State<Tela> {
             DrawerHeader(
               child: Text(
                 "Menu", 
-                style: GoogleFonts.robotoMono(
+                style: TextStyle(
+                  fontFamily: "Georgia",
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
                 ),

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class StoreStatus extends StatelessWidget {
+  const StoreStatus({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(home: StoreStatusWidget());
@@ -8,6 +10,8 @@ class StoreStatus extends StatelessWidget {
 }
 
 class StoreStatusWidget extends StatefulWidget {
+  const StoreStatusWidget({super.key});
+
   @override
   _StoreStatusWidgetState createState() => _StoreStatusWidgetState();
 }

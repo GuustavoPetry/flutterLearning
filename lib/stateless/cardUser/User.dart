@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:meu_app/stateless/cardUser/UserCard.dart';
+import 'package:meu_app/stateless/cardUser/user_card.dart';
 
 class User extends StatelessWidget {
   @override

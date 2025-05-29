@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:meu_app/inherited/UserData.dart';
-import 'package:meu_app/stateless/cardUser/UserCard.dart';
+import 'package:meu_app/inherited/user_data.dart';
+import 'package:meu_app/stateless/cardUser/user_card.dart';
 
 class UserInfos extends StatelessWidget {
+  const UserInfos({super.key});
+
   @override
   Widget build(BuildContext context) {
     return UserData(
@@ -30,6 +32,8 @@ class UserInfos extends StatelessWidget {
 }
 
 class WelcomeMessage extends StatelessWidget {
+  const WelcomeMessage({super.key});
+
   @override
   Widget build(BuildContext context) {
     final username = UserData.of(context).username;

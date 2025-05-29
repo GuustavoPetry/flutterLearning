@@ -2,6 +2,8 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 
 class RandomNumber extends StatelessWidget {
+  const RandomNumber({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(home: RandomNumberWidget());
@@ -9,6 +11,9 @@ class RandomNumber extends StatelessWidget {
 }
 
 class RandomNumberWidget extends StatefulWidget {
+  const RandomNumberWidget({super.key});
+
+  @override
   _RandomNumberWidgetState createState() => _RandomNumberWidgetState();
 }
 

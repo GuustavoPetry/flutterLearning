@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 
 class ExercicioMaterial extends StatefulWidget {
+  const ExercicioMaterial({super.key});
+
   @override
-  State<StatefulWidget> createState() => _ExercicioMaterialState();
+  State<ExercicioMaterial> createState() => _ExercicioMaterialState();
 }
 
 class _ExercicioMaterialState extends State<ExercicioMaterial> {

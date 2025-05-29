@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class Contador extends StatefulWidget {
+  const Contador({super.key});
+
   @override
   State<StatefulWidget> createState() => _ContadorState();
 }

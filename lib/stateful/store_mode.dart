@@ -13,7 +13,7 @@ class StoreStatusWidget extends StatefulWidget {
   const StoreStatusWidget({super.key});
 
   @override
-  _StoreStatusWidgetState createState() => _StoreStatusWidgetState();
+  State<StoreStatusWidget> createState() => _StoreStatusWidgetState();
 }
 
 class _StoreStatusWidgetState extends State<StoreStatusWidget> {

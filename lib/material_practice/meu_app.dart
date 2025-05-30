@@ -5,6 +5,6 @@ class MeuApp extends StatefulWidget {
   const MeuApp({super.key});
 
   @override
-  State<StatefulWidget> createState() => MeuAppState();
+  State<MeuApp> createState() => MeuAppState();
 
 }

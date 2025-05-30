@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:meu_app/stateless/cardUser/user_card.dart';
 
 class User extends StatelessWidget {
+  const User({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

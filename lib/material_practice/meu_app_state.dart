@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:meu_app/material_practice/meu_app.dart';
 import 'package:meu_app/material_practice/my_home.dart';
 
-class MeuAppState extends State<StatefulWidget> {
+class MeuAppState extends State<MeuApp> {
   bool isDark = false;
 
   @override

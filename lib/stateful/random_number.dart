@@ -14,7 +14,7 @@ class RandomNumberWidget extends StatefulWidget {
   const RandomNumberWidget({super.key});
 
   @override
-  _RandomNumberWidgetState createState() => _RandomNumberWidgetState();
+  State<RandomNumberWidget> createState() => _RandomNumberWidgetState();
 }
 
 class _RandomNumberWidgetState extends State<RandomNumberWidget> {

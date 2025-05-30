@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:meu_app/widgets_layout/montando_tela.dart';
 
-class MyWidget extends StatelessWidget {
-  const MyWidget({super.key});
+class LayoutApp extends StatelessWidget {
+  const LayoutApp({super.key});
 
   @override
   Widget build(BuildContext context) {

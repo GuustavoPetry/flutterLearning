@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:meu_app/widgets_layout/widget_column.dart';
+import 'package:meu_app/widgets_layout/widget_container.dart';
+import 'package:meu_app/widgets_layout/widget_row.dart';
 
 class MontandoTela extends StatefulWidget {
   const MontandoTela({super.key});
@@ -10,6 +13,10 @@ class MontandoTela extends StatefulWidget {
 class _MontandoTela extends State<MontandoTela> {
   @override
   Widget build(BuildContext context) {
-    return Placeholder();
+    return Scaffold(
+      appBar: AppBar(title: Text("Widgets de Layout")),
+
+      body: WidgetRow(),
+    );
   }
 }

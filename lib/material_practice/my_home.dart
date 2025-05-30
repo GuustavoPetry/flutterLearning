@@ -7,7 +7,12 @@ class MyHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor:
+          Theme.of(context).brightness == Brightness.dark
+              ? const Color.fromARGB(255, 2, 23, 33)
+              : Colors.white70,
       appBar: AppBar(
+        backgroundColor: Theme.of(context).primaryColor,
         title: Text(
           "MarkeTool Finance",
           style: TextStyle(
@@ -28,7 +33,7 @@ class MyHome extends StatelessWidget {
           children: [
             DrawerHeader(
               child: Text(
-                "HEADER",
+                "MENU",
                 style: TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
@@ -99,6 +104,8 @@ class MyHome extends StatelessWidget {
           ],
         ),
       ),
+
+      body: ListView(children: []),
     );
   }
 }

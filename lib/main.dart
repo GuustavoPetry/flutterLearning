@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:meu_app/material_practice/meu_app.dart';
+import 'package:meu_app/widgets_layout/layout_app.dart';
 
 void main(List<String> args) {
 
@@ -9,6 +10,6 @@ void main(List<String> args) {
   //   runApp(MyCupertino());
   // }
 
-  runApp(MeuApp());
+  runApp(LayoutApp());
 
 }

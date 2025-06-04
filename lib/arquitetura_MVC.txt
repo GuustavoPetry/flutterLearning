@@ -1,0 +1,19 @@
+* MVC => MODELS, VIEWS, CONTROLLERS
+    - ARQUITETURA DE SOFTWARE QUE SEPARA A APLICAÇÃO EM 3 CAMADAS PRINCIPAIS
+    - MODELS:
+        representa a lógica de negócio e os dados da aplicação responsável por 
+        manipular os dados, regras e persistência
+
+    - VIEWS:
+        é a interface do usuário, responsável por exibir os dados que vem das 
+        models, deve ser mais "burra" possível (sem lógica, apenas mostra dados
+        e encaminha eventos)
+
+    - CONTROLLERS:
+        atua como intermediário entre MODEL e VIEW, e interpreta ações do usuário 
+        como cliques, além de atualizar a MODEL. Após atualizar a MODEL, geralmente
+        informa a view para se atualizar (SETSTATE)
+
+    * OBJETIVOS DA ARQUITETURA MVC:
+        separação das responsabilidades, o que facilita a manutenção, testes e 
+        escalabilidade, além de tornar o código mais limpo, organizado e modular

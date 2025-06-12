@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:isolate';
 
 import 'package:flutter/material.dart';
 
@@ -15,7 +16,7 @@ class _ProductParseState extends State<ProductParse> {
   @override
   void initState() {
     super.initState();
-    _items = loadJson();
+    _items = loadJsonIsolate();
   }
 
   // Ler os dados do json, SEM ISOLATE:
@@ -25,6 +26,17 @@ class _ProductParseState extends State<ProductParse> {
     ).loadString("assets/data.json");
     final parsed = json.decode(jsonString);
     return parsed["items"] as List<dynamic>;
+  }
+
+  // Ler os dados do json, COM ISOLATE:
+  Future<List<dynamic>> loadJsonIsolate() async {
+    final jsonString = await DefaultAssetBundle.of(
+      context,
+    ).loadString("assets/data.json");
+    return await Isolate.run(() {
+      final parsed = json.decode(jsonString);
+      return parsed["items"] as List<dynamic>;
+    });
   }
 
   @override
@@ -60,7 +72,7 @@ class _ProductParseState extends State<ProductParse> {
                       "R\$ ${product["preco"].toStringAsFixed(2)}",
                       style: TextStyle(
                         color: Colors.green,
-                        fontWeight: FontWeight.bold
+                        fontWeight: FontWeight.bold,
                       ),
                     ),
                   ),
